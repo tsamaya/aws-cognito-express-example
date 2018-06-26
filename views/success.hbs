@@ -1,0 +1,23 @@
+{{#if user}}
+	<div class="card">
+		<div class="card-header">
+			<h2>Hello, {{ user.displayName }}.</h2>
+		</div>
+		<div class="card-body">
+			<p>ip: {{ip}}</p>
+			<p>lastlogin: {{lastLogin}}</p>
+			<p>DataRecords JSON: {{records}}</p>
+			<p>New DataRecords JSON: {{recordsNew}}</p>
+			<p>cognitoId: {{cognitoId}}</p>
+		</div>
+	</div>
+	<div class="card">
+    <div class="card-body">
+			<figure class="figure">
+				{{#each user.photos}}<img src="{{ value }}" alt="Photo of {{ user.displayName }}.">{{/each}}
+			</figure>
+      <p class="">ID: {{ user.id }}</p>
+			<p class="">Email: {{#each user.emails}} {{ value }} {{/each}}</p>
+    </div>
+  </div>
+{{/if}}
