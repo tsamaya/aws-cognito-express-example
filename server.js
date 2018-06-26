@@ -189,11 +189,11 @@ app.get(
     failureRedirect: '/',
   }),
   (req, res) => {
-    res.redirect('/sucess');
+    res.redirect('/success');
   }
 );
 
-app.get('/sucess', isAuthorized, (req, res) => {
+app.get('/success', isAuthorized, (req, res) => {
   AWS.config.region = process.env.COGNITO_AWS_REGION;
   const params = {
     AccountId: process.env.AWS_ACCOUNT_ID, // AWS account Id
