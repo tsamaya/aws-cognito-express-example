@@ -1,5 +1,6 @@
 # aws-cognito-express-example
-Example Express Node application using AWS Cognito with Google OAuth2.
+
+Example Express Node application using AWS Cognito Identity Pool with Google OAuth2.
 
 ![work in progress](resources/wip.png)
 
@@ -7,19 +8,20 @@ Example Express Node application using AWS Cognito with Google OAuth2.
 
 During the tutorial you will need to store credentials:
 
-1. GOOGLE_CLIENT_ID=
-1. GOOGLE_CLIENT_SECRET=
-1. GOOGLE_CALLBACK=http://127.0.0.1:3000/auth/google/callback
-1. DOMAIN_EMAILS=your-company-domain.com or blank for no restriction
+1.  GOOGLE_CLIENT_ID=
+1.  GOOGLE_CLIENT_SECRET=
+1.  GOOGLE_CALLBACK=http://127.0.0.1:3000/auth/google/callback
+1.  DOMAIN_EMAILS=your-company-domain.com or blank for no restriction
 
-1. AWS_ACCOUNT_ID=
-1. COGNITO_AWS_REGION=
-1. COGNITO_IDENTITY_POOL_ID=
+1.  AWS_ACCOUNT_ID=
+1.  COGNITO_AWS_REGION=
+1.  COGNITO_IDENTITY_POOL_ID=
 
-1. COGNITO_IDENTITY_POOL_ARN=
-1. COGNITO_DATASET_NAME=my_pool
+1.  COGNITO_IDENTITY_POOL_ARN=
+1.  COGNITO_DATASET_NAME=my_pool
 
 ### Register OAuth 2.0 client ID
+
 see https://github.com/tsamaya/passport-example-with-google-oauth2
 
 ### Create AWS account
@@ -27,6 +29,7 @@ see https://github.com/tsamaya/passport-example-with-google-oauth2
 With this tutorial, you need an AWS account. You can find more details on how to create an AWS account in the [AWS documentation]().
 
 ### Creating an AWS User
+
 In the AWS console, open the IAM service, navigate to “Users” and select “Add user” to create a new user: `simple-webservice-user`.
 
 ### Create a Cognito Pool
@@ -46,9 +49,6 @@ create the identity pool. An IAM role is about to be create. Click Allow. The ge
 ![identity pool](resources/aws-identity-pool-ID-js.png)
 
 A Cognito pool is created and we can viewing its dashboard.
-
-
-
 
 ### let's code now
 
@@ -71,7 +71,6 @@ A Cognito pool is created and we can viewing its dashboard.
 ```
 
 _TBC_
-
 
 ```shell
     # init package json file

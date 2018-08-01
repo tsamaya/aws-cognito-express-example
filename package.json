@@ -1,7 +1,7 @@
 {
   "name": "aws-cognito-express-example",
   "version": "1.0.0",
-  "description": "Example Express Node application using AWS Cognito with Google OAuth2.",
+  "description": "Example Express Node application using AWS Cognito Identity Pool with Google OAuth2.",
   "main": "server.js",
   "lint-staged": {
     "*.js": [
